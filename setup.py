@@ -15,7 +15,7 @@ while i < 10:
     listData.append(tempString);
     print tempString;
     i = i+1;
-file = open(OutputFile.txt, 'a');
+file = open(OutputFile.txt, 'a+');
 for x in range(0, len(listData)):
 	file.write(listData[x]);
 file.close();
