@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    strout =  "asakdlaksjdal" + websetup.grabExternalData()
+    strout = websetup.grabExternalData()
     return strout
 
 if __name__ == "__main__":
