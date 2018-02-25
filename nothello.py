@@ -11,7 +11,7 @@ def hello():
 @app.route('/practice')
 def send_practice():
         strout = websetup.grabExternalData()
-        return render_template('htmltemp.html', some_key=strout)
+        return render_template('temp.html', some_key=strout)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
