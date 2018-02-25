@@ -3,7 +3,8 @@ import sys
 import Adafruit_DHT
 import datetime
 import time
-#from flask import Flask
+from flask import Flask
+
 
 
 @app.route("/")
