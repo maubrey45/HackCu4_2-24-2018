@@ -1,15 +1,47 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Temp and Humidity Log</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style type="text/css">
+		html {
+			height: 100%;
+			width: 100%;
+			color: #0084b4;
+		}
+
+		body{
+			background: linear-gradient( rgba(25, 25, 25, .4), rgba(25, 25, 25, 0.4) ), url(https://source.unsplash.com/Hzdru-svFbg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		h2 {
+			color: #ffffff;
+		}
+
+		.container {
+			text-align: center;
+		}
+
+		.panel {
+			background-color: #rgba(255, 255, 255, 0.5);
+			height: 100%;
+		}
+	</style>
 </head>
-<body background='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXyVS8WiTg0kl_RzrGYk4DS91DmhmQMLSfgtCAuuOtrERrweCfBw' 
->
-	<h1 style="color:rgb(0,0,255)">Temperature and Humidity over Certain time</h1>
-		<font size="6">
-		<ol>
-			<li>{{some_key}}</li>
-		</ol>
-</font>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h2 class="panel-title">Temperature and Humidity Over Certain Time</h2>
+			</div>
+			<div class="panel-body">
+				<ol class="list-group">
+					<li class="list-group-item list-group-item-info">{{some_key}}</li>
+				</ol>
+			</div>			
+		</div>
+	</div>
 </body>
 </html>
