@@ -10,6 +10,7 @@ def hello():
 
 @app.route('/practice')
 def send_practice():
+        strout = websetup.grabExternalData()
         return render_template('practice.html', some_key=strout)
 
 if __name__ == "__main__":
