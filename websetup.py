@@ -5,7 +5,6 @@ import datetime
 import time
 from flask import Flask
 
-@app.route("/")
 def grabExternalData():
 	    humidity, temperature = Adafruit_DHT.read_retry(11, 4);
 	    t = datetime.datetime.now();
