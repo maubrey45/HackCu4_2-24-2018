@@ -7,7 +7,7 @@ i = 0;
 listData = [];
 while i < 10:
 
-    time.sleep(30);
+    time.sleep(5);
     humidity, temperature = Adafruit_DHT.read_retry(11, 4);
     t = datetime.datetime.now();
     currentday = t.today();
