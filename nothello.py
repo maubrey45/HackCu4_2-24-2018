@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/practice')
 def send_practice():
-        return render_template('practice.html', some_key=345)
+        return render_template('practice.html', some_key=strout)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
