@@ -18,4 +18,5 @@ while i < 10:
 file = open("OutputFile.txt", 'a+');
 for x in range(0, len(listData)):
 	file.write(listData[x]);
+	file.write("\n");
 file.close();
