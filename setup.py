@@ -3,11 +3,11 @@ import sys
 import Adafruit_DHT
 import datetime
 import time
-from flask import Flask
+#from flask import Flask
 
-app = Flask(__name__)
+#app = Flask(__name__)
 
-@app.route("/")
+#@app.route("/")
 def grabExternalData():
 	i = 0;
 	listData = [];
@@ -26,6 +26,6 @@ def grabExternalData():
 		file.write(listData[x]);
 		file.write("\n");
 	file.close();
-if __name__ == "__main__":
+#if __name__ == "__main__":
 	
-	app.run()
+	#app.run()
