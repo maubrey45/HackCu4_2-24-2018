@@ -5,6 +5,8 @@ import datetime
 import time
 from flask import Flask
 
+app = Flask(__name__)
+
 @app.route("/")
 def grabExternalData():
 	i = 0;
@@ -25,5 +27,5 @@ def grabExternalData():
 		file.write("\n");
 	file.close();
 if __name__ == "__main__":
-	grabExternalData()
+	
 	app.run()
