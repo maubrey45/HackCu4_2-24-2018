@@ -8,7 +8,7 @@ import time
 #app = Flask(__name__)
 
 #@app.route("/")
-def grabExternalData():
+#def grabExternalData():
 	i = 0;
 	listData = [];
 	while i < 10:
