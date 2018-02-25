@@ -3,12 +3,7 @@ import sys
 import Adafruit_DHT
 import datetime
 import time
-#from flask import Flask
 
-#app = Flask(__name__)
-
-#@app.route("/")
-#def grabExternalData():
 i = 0;
 listData = [];
 while i < 10:
@@ -25,6 +20,4 @@ for x in range(0, len(listData)):
 	file.write(listData[x]);
 	file.write("\n");
 file.close();
-#if __name__ == "__main__":
-	
-	#app.run()
+
