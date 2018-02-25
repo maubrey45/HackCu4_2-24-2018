@@ -10,6 +10,5 @@ def grabExternalData():
 	    t = datetime.datetime.now();
 	    currentday = t.today();
 	    tempString = 'Temp: {} C  Humidity: {} %  Date/time: {}'.format(temperature, humidity, t);
-	    print(tempString)
-	    return temperature;
+	    return tempString;
 	    
