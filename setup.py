@@ -7,5 +7,6 @@ while i < 10:
 
     humidity, temperature = Adafruit_DHT.read_retry(11, 4);
     time = datetime.datetime.now();
-    print 'Temp: {0:0.1f} C  Humidity: {1:0.1f}%  Date/time: {}'.format(temperature, humidity, time.day);
+    currentday = time.day
+    print 'Temp: {0:0.1f} C  Humidity: {1:0.1f} %  Date/time: {}'.format(temperature, humidity, currentday);
     i = i+1;
