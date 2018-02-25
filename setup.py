@@ -4,11 +4,14 @@ import Adafruit_DHT
 import datetime
 import time
 i = 0;
+listData = [];
 while i < 10:
 
     time.sleep(30);
     humidity, temperature = Adafruit_DHT.read_retry(11, 4);
     t = datetime.datetime.now();
     currentday = t.today();
-    print 'Temp: {} C  Humidity: {} %  Date/time: {}'.format(temperature, humidity, t);
+    tempString = 'Temp: {} C  Humidity: {} %  Date/time: {}'.format(temperature, humidity, t);
+    listData.append(tempString);
+    print tempString;
     i = i+1;
