@@ -25,5 +25,5 @@ def grabExternalData():
 		file.write("\n");
 	file.close();
 if __name__ == "__main__":
-	grabExternalData();
-    app.run()
+	grabExternalData()
+	app.run()
